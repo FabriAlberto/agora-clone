@@ -1,0 +1,18 @@
+{
+  "layout":{
+    "about_us":"Quiénes somos",
+    "programs":"Programas",
+    "impact":"Impacto",
+    "join_us":"Súmate",  
+    "blog":"Blog",
+    "resources":"Recursos",
+    "offices":"Sedes",
+    "change_lab":"Change Lab",
+    "ecosystem":"Ecosistema",
+    "inclusive_projects":"Proyectos inclusivos",
+    "entrepreneurs":"Emprendimintos y pequeñas empresas en crecimiento",
+    "mexico":"México",
+    "donate":"Donar",
+    "btn_suscribe":"Suscribirme al newsletter"
+  }
+}

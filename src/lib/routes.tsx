@@ -1,6 +1,6 @@
-import { NavbarItem } from "@/types/common.type";
+import { NavbarItemLink } from "@/types/common.type";
 
-export const itemsNavbar: NavbarItem[] = [
+export const navbarItems: NavbarItemLink[] = [
   {
     key: "about_us",
     path: "/about-us",
@@ -42,5 +42,16 @@ export const itemsNavbar: NavbarItem[] = [
   {
     key: "offices",
     path: "/offices",
+    children: [
+      {
+        key: "mexico",
+        path: "#",
+      },
+    ],
+  },
+  {
+    key: "change_lab",
+    path: "https://change-lab.co/",
+    classes: "font-semibold text-secondary hover:text-primary ",
   },
 ];

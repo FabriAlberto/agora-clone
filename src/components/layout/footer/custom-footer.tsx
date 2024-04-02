@@ -10,6 +10,7 @@ import ButtonLanguage from "@/components/common/ui/language-button";
 import Link from "next/link";
 import ButtonSuscribe from "./button-suscribe";
 import SocialNetworkingList from "./social-networking-list";
+import ButtonArrowAnimation from "@/components/common/ui/button-arrow-animation";
 export default async function CustomFooter() {
   const lang = getLocaleFromHeader();
   const dictionary = await getDictionary(lang);
@@ -42,7 +43,11 @@ export default async function CustomFooter() {
 
       <div className=" flex min-h-[150px] w-full flex-col items-start justify-start  gap-4 p-2.5 md:w-3/12">
         <ButtonDonate dictionary={dictionary.layout} />
-        <ButtonSuscribe dictionary={dictionary.layout} />
+        <ButtonArrowAnimation
+          title={dictionary.layout.btn_suscribe}
+          className="flex items-center gap-1.5 "
+          href="#"
+        />
         <ButtonLanguage lang={lang} />
       </div>
 

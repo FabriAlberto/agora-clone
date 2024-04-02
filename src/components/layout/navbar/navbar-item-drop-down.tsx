@@ -41,7 +41,7 @@ const NavbarItemDropDown = ({ item, dictionary, lang }: Props) => {
 
       <DropdownMenu
         aria-label="ACME features"
-        className="w-[340px]"
+        className="min-w-[200px]"
         itemClasses={{
           base: "gap-4",
         }}

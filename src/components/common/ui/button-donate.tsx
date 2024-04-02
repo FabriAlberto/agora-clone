@@ -11,7 +11,7 @@ const ButtonDonate = ({ dictionary }: Props) => {
     <Button
       as={Link}
       href={"https://change-lab.co/"}
-      className="flex h-[25px] items-center rounded-xl bg-primary  px-4 px-7 py-2 text-white"
+      className="flex h-[25px] items-center rounded-xl bg-primary  px-7 py-2 text-white"
     >
       <p className="text-sm">{dictionary.donate}</p>
     </Button>

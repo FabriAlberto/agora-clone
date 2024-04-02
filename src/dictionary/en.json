@@ -1,19 +1,36 @@
 {
-  "layout":{
-    "about_us":"About us",
-    "programs":"Programs",
-    "impact":"Impact",
-    "join_us":"Join us",  
-    "blog":"Blog",
-    "resources":"Resources",
-    "offices":"Offices",
-    "change_lab":"Change Lab",
-    "ecosystem":"Ecosystem",
-    "inclusive_projects":"Inclusive projects",
-    "entrepreneurs":"Entrepreneurs and thriving small businesses",
-    "mexico":"México",
-    "donate":"Donate",
-    "btn_suscribe":"Subscribe to Our Newsletter"
-    
-  } 
+  "layout": {
+    "about_us": "About us",
+    "programs": "Programs",
+    "impact": "Impact",
+    "join_us": "Join us",
+    "blog": "Blog",
+    "resources": "Resources",
+    "offices": "Offices",
+    "change_lab": "Change Lab",
+    "ecosystem": "Ecosystem",
+    "inclusive_projects": "Inclusive projects",
+    "entrepreneurs": "Entrepreneurs and thriving small businesses",
+    "mexico": "México",
+    "donate": "Donate",
+    "btn_suscribe": "Subscribe to Our Newsletter"
+  },
+  "home": {
+    "title_company_dedication": "What do we do?",
+    "text_company_dedication": "We calibrate Latin America's entrepreneurial ecosystem to create inclusive prosperity for the individual, the company, the community and the environment.",
+    "btn_programs": "Find Out More About Our Open Programs",
+    "title_card_entrepreneurs": "Entrepreneurs and thriving small businesses",
+    "title_card_ecosystem": "Ecosystem",
+    "title_card_inclusive_projects": "Inclusive projects",
+    "content_card_entrepreneurs": "We offer business training, market outreach and access to financing to entrepreneurs and thriving small businesses on their journey towards economic, social and environmental sustainability.",
+    "content_card_ecosystem": "We contribute to strengthen the ecosystem of entrepreneurs and thriving small businesses with events, such as our Forming Catalysts program, and as co-leaders of the Impact Network, comprising +100 organizations in the region",
+    "content_card_inclusive_projects": "We execute specific projects together with partners with whom we share our vision for financial inclusion, gender equality, diversification, resilience and sustainability in value chains, and adaptation to climate change in the region."
+   ,"title_news":"Open calls and news",
+   "title_card_program":"Program Juntas Contamos ",
+   "title_card_ceo":"“Achieving a balance between work and family one of the most important challenges of being an entrepreneur.”",
+   "title_card_agora":"Transforming Latin America: Agora Partnerships acquires CreativeLab",
+   "content_card_program":"Opportunity for women entrepreneurs in Mexico, Guatemala, El Salvador and Honduras. Juntas Contamos consists of three programs aimed at three different profiles of women entrepreneurs.",
+   "content_card_ceo":"Francis Castillo, founder of 'The Baking Mom' is a great example of how being a mom and entrepreneur can be achieved by breaking paradigms and fears.",
+   "content_card_agora":"This union not only represents an evolution of the Colombian brand name to ChangeLab, but also sets ambitious goals for the future."
+  }
 }

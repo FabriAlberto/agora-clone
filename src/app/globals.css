@@ -32,19 +32,19 @@ body {
   }
 }
 
-  
-.move-suscribe-button{
-    transition: all 0.3s ease-in-out;
-    animation-name: moveSuscribe;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
 
-}
 .suscribe-button{
   transition: all 0.3s ease-out;
   transform: translate(0px,0px);
 }
+.group-button-arrow:hover .suscribe-button{
+  transition: all 0.3s ease-in-out;
+    animation-name: moveSuscribe;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
 @keyframes moveSuscribe {
   0%{
     transform: translate(0px,0px);

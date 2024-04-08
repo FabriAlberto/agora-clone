@@ -23,7 +23,7 @@ const CustomAnimationCard = ({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div
+    <article
       className={`relative p-[10px] ${className} group`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -48,13 +48,13 @@ const CustomAnimationCard = ({
       <div
         className={`rounded-xl ${hovered ? "text-white " : ""} p-[30px] `}
         style={{
-          background: hovered ? backgroundColorContent || customStyles.gradient1 : "",
+          background: hovered ? backgroundColorContent ?? customStyles.gradient1 : "",
         }}
       >
         <h3 className="mb-[1rem] text-lg  font-bold">{title}</h3>
         <p className="mb-[1rem] text-base">{content}</p>
       </div>
-    </div>
+    </article>
   );
 };
 

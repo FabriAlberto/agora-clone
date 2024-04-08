@@ -23,7 +23,6 @@ const config: Config = {
         sm: "0.832rem",
         base: "0.88rem",
       },
-
     },
   },
   darkMode: "class",

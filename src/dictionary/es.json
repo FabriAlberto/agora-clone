@@ -15,6 +15,7 @@
     "donate": "Donar",
     "btn_suscribe": "Suscribirme al newsletter"
   },
+  
   "home": {
     "title_company_dedication": "¿Qué hacemos?",
     "text_company_dedication": "Calibramos el ecosistema emprendedor de América Latina para crear prosperidad inclusiva para el individuo, la empresa, la comunidad y el medio ambiente.",
@@ -25,13 +26,49 @@
     "content_card_entrepreneurs": "Ofrecemos formación empresarial, vinculación a mercados y acceso a financiamiento a emprendedores y pequeñas empresas en crecimiento en su camino hacia la sostenibilidad económica, social y ambiental.",
     "content_card_ecosystem": "Contribuimos al fortalecimiento del ecosistema de emprendedores y pequeñas empresas en crecimiento a través de eventos, tales como el programa Formando Catalizadores, y el co-liderazgo de la Red de Impacto, integrada por más de 100 organizaciones de la región.",
     "content_card_inclusive_projects": "Ejecutamos proyectos específicos junto a aliados con los que compartimos nuestra visión por la inclusión financiera, la equidad de género, la diversificación, resiliencia y sostenibilidad en las cadenas de valor, y la adaptación al cambio climático en la región.",
-    "title_news":"Convocatorias abiertas y novedades",
-    "title_card_program":"Programa Juntas Contamos",
-    "title_card_ceo":"“Alcanzar un equilibrio entre el trabajo y familia uno de los retos más importantes al ser empresaria”",
-    "title_card_agora":"Transformando a América Latina: Agora Partnerships adquiere CreativeLab",
-    "content_card_program":"Oportunidad para mujeres empresarias en México, Guatemala, El Salvador y Honduras. Juntas Contamos Consta de tres programas dirigidos a 3 perfiles diferentes de empresarias.",
-    "content_card_ceo":"Francis Castillo, fundadora de ‘The Baking Mom’es un gran ejemplo de cómo el ser mamá y emprendedora se puede lograr rompiendo paradigmas y miedos",
-    "content_card_agora":"Esta unión no solo representa una evolución en el nombre de la marca colombiana a ChangeLab, sino que también establece ambiciosas metas para el futuro."
-
+    "title_news": "Convocatorias abiertas y novedades",
+    "title_card_program": "Programa Juntas Contamos",
+    "title_card_ceo": "“Alcanzar un equilibrio entre el trabajo y familia uno de los retos más importantes al ser empresaria”",
+    "title_card_agora": "Transformando a América Latina: Agora Partnerships adquiere CreativeLab",
+    "content_card_program": "Oportunidad para mujeres empresarias en México, Guatemala, El Salvador y Honduras. Juntas Contamos Consta de tres programas dirigidos a 3 perfiles diferentes de empresarias.",
+    "content_card_ceo": "Francis Castillo, fundadora de ‘The Baking Mom’es un gran ejemplo de cómo el ser mamá y emprendedora se puede lograr rompiendo paradigmas y miedos",
+    "content_card_agora": "Esta unión no solo representa una evolución en el nombre de la marca colombiana a ChangeLab, sino que también establece ambiciosas metas para el futuro.",
+    "title_partners": "Nuestros aliados",
+    "text_partners": " Conoce a las organizaciones que nos acompañan por una sociedad más inclusiva y en sintonía con el ambiente.\n Contáctate para conocer más sobre cómo colaborar con Agora Partnerships.",
+    "btn_partners_redirect": "Súmate como aliado",
+    "btn_more_information": "CONOCER MÁS",
+    "title_financiers": "Nuestros financiadores",
+    "title_impact": "Impacto",
+    "text_impact": "Nos comprometemos a la transparencia con los emprendedores y el ecosistema emprendedor en Latinoamérica alineándonos con los Objetivos de Desarrollo Sostenible de las Naciones Unidas.",
+    "title_job_opportunities": "Oportunidades laborales",
+    "btn_more_jobs": "Conoce todas nuestras vacantes",
+    "title_graphic_designer": "Diseñador gráfico",
+    "content_graphic_designer": "Buscamos un/a Diseñador/a Gráfico con al menos 3 años de experiencia en diseño de presentaciones, materiales educativos, brochures, y otros materiales asociados a productos educativos digitales.",
+    "title_data_engineer": "Data Engineer",
+    "content_data_engineer": "Buscamos un/a Data Engineer (Ingeniero de Datos) que contribuya al desarrollo, implementación y mantenimiento de un sistema de gestión de datos eficiente, eficaz y robusto",
+    "title_manager": "Gerente de Alianzas",
+    "content_manager": "Buscamos un/una profesional con experiencia y habilidades en la construcción y gestión de alianzas comerciales y estratégicas con múltiples tipos de organizaciones",
+    "title_suscribe_form": "Suscribete a nuestro newsletter",
+    "see_more":"Ver más",
+    "label_first_name": "Nombre",
+    "label_last_name": "Apellido",
+    "label_email": "Correo",
+    "label_company": "Empresa",
+    "label_country": "País",
+    "label_business_name": "Profesión",
+    "btn_suscribe":"Suscribirme",
+    "counter_card_entrepreneurs_assisted":"Emprendedores atendidos",
+    "counter_card_catalysts_trained":"Catalizadores atendidos",
+    "counter_card_countries":"Paises que tenemos incidencia"
+  },
+  "common":{
+    "error_required_field": "Este campo es obligatorio",
+    "error_invalid_email": "Correo inválido",
+    "error_max_characters": "Máximo 20 caracteres",
+    "message_error":"Ha ocurrido un error intentelo nuevamente",
+    "message_success":"Correcto"
+  },
+  "blogs":{
+     "error_not_found":"Articulos no encontrados, intentalo de nuevo en 1 minuto"
   }
 }

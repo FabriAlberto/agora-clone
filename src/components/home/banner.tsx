@@ -1,16 +1,21 @@
 import React from "react";
 import HeaderImage from "../../../public/juntascontamos.jpg";
+import HeaderImageMobile from "../../../public/Banner-cel-1-jpg.webp";
+
 import Image from "next/image";
 import Link from "next/link";
 
 const Banner = () => {
   return (
     <div className="cursor-pointer">
-      <Link href={"https://agora2030.org/programa-juntas-contamos/"}>
+      <Link href={"https://agora2030.org/programa-juntas-contamos/"} className="hidden md:block">
+        <Image src={HeaderImage} alt="logo" className="h-auto w-full object-contain md:h-auto" />
+      </Link>
+      <Link href={"https://agora2030.org/programa-juntas-contamos/"} className="block md:hidden">
         <Image
-          src={HeaderImage}
+          src={HeaderImageMobile}
           alt="logo"
-          style={{ width: "100%", height: "auto", objectFit: "contain" }}
+          className=" h-[70vh] w-full object-cover md:h-auto"
         />
       </Link>
     </div>

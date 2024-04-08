@@ -1,28 +1,41 @@
+"use client";
+
 import Image from "next/image";
 import Icon from "../../../../public/agora-logo.svg";
-import Link from "next/link";
-import { Button } from "@nextui-org/button";
 import NavbarLinks from "./navbar-links";
 import ButtonLanguage from "@/components/common/ui/language-button";
 import { Navbar, NavbarContent, NavbarMenuToggle } from "@nextui-org/navbar";
 import { navbarItems } from "@/lib/routes";
 import MenuMobile from "./menu-mobile";
 import { Locale } from "@/types/common.type";
-import { getLocaleFromHeader } from "@/utils/utils.server";
-import { getDictionary } from "@/utils/dictionary";
 import ButtonDonate from "@/components/common/ui/button-donate";
+import Link from "next/link";
+import { MasterDictionaryType } from "@/context/main.context";
+import { useState } from "react";
+type Props = {
+  lang: Locale;
+  dictionary: MasterDictionaryType;
+};
+export default function CustomNavbar({ lang, dictionary }: Readonly<Props>) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default async function CustomNavbar() {
-  const lang = getLocaleFromHeader();
-  const dictionary = await getDictionary(lang);
   return (
     <Navbar
-      className=" flex h-[75px] w-full justify-center shadow-md"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className=" fixed flex h-[75px] w-full justify-center shadow-md"
       maxWidth="lg"
-      position="sticky"
     >
       <NavbarContent className="w-2/12">
-        <Image alt="logo agora" src={Icon} width={110} height={110} />
+        <Link href={`/${lang}`}>
+          <Image
+            alt="logo agora"
+            src={Icon}
+            width={110}
+            height={110}
+            onClick={() => setIsMenuOpen(false)}
+          />
+        </Link>
       </NavbarContent>
 
       <NavbarContent
@@ -40,9 +53,13 @@ export default async function CustomNavbar() {
         </div>
       </NavbarContent>
 
-      <NavbarMenuToggle className="md:hidden" />
-
-      <MenuMobile navbarItems={navbarItems} dictionary={dictionary.layout} lang={lang as Locale} />
+      <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="md:hidden" />
+      <MenuMobile
+        navbarItems={navbarItems}
+        dictionary={dictionary.layout}
+        lang={lang as Locale}
+        onCloseMenu={() => setIsMenuOpen(false)}
+      />
     </Navbar>
   );
 }

@@ -5,18 +5,16 @@ import NavbarItemDropDown from "./navbar-item-drop-down";
 import { Locale, NavbarItemLink } from "@/types/common.type";
 import { MasterDictionaryType } from "@/context/main.context";
 import { getFullPath } from "../../../utils/common-functions";
-import { useParams } from "next/navigation";
 
 type Props = {
   navbarItems: NavbarItemLink[];
   dictionary: MasterDictionaryType["layout"];
-  lang:Locale;
+  lang: Locale;
 };
-const NavbarLinks = ({ navbarItems, dictionary, lang}: Props) => {
-
+const NavbarLinks = ({ navbarItems, dictionary, lang }: Props) => {
   return (
     <>
-      {navbarItems.map((item) => {
+      {navbarItems.map((item, index) => {
         return item.children ? (
           <NavbarItemDropDown
             key={item.key}
@@ -26,10 +24,11 @@ const NavbarLinks = ({ navbarItems, dictionary, lang}: Props) => {
           />
         ) : (
           <NavbarItem key={item.key}>
-            <Link 
+            <Link
               key={item.key}
               href={getFullPath((lang as Locale) ?? "es", item.path)}
-              className={`hover:text-secondary text-sm text-black ${item.classes} `}
+              className={` text-sm text-black ${item.classes} 
+              ${index === navbarItems.length - 1 ? "hover:text-primary" : "hover:text-secondary"} `}
             >
               {dictionary[item.key]}
             </Link>

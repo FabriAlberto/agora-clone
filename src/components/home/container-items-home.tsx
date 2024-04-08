@@ -9,11 +9,11 @@ type Props = {
 };
 const ContainerItemHome = ({ children, title, textContent, hrefButton, titleButton }: Props) => {
   return (
-    <div className=" mx-auto px-[50px] pt-[70px]">
-      <div className="mx-auto max-w-[1140px]">
+    <section className=" mx-auto px-[10px] md:px-[50px] pt-[70px]">
+      <div className={`mx-auto max-w-[1140px]`}>
         <div className="w-full">
           <div className="flex w-full flex-wrap justify-between">
-            <div className={` w-12/12 p-[10px]  ${!titleButton ? "md:w-8/12" : "md:w-5/12"}`}>
+            <div className={` w-12/12 p-[10px]  ${!titleButton ? "md:w-8/12" : "md:w-6/12"}`}>
               <p className="text-3xl font-semibold text-secondary">{title}</p>
               <p className="mt-5">{textContent}</p>
             </div>
@@ -32,7 +32,7 @@ const ContainerItemHome = ({ children, title, textContent, hrefButton, titleButt
 
         {children}
       </div>
-    </div>
+    </section>
   );
 };
 

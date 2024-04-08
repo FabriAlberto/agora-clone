@@ -1,4 +1,3 @@
-import React from "react";
 import { useMainContext } from "../context/main.context";
 import { getFullPath } from "@/utils/common-functions";
 import { useRouter } from "next/navigation";

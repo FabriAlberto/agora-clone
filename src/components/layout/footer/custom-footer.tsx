@@ -16,7 +16,7 @@ export default async function CustomFooter() {
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="mx-auto flex max-w-[777px] flex-wrap md:max-w-[1140px] ">
+    <div className={`mx-auto flex  flex-wrap md:max-w-[1140px]`}>
       <div className="flex min-h-[200px] w-full  flex-col justify-between p-2.5 md:w-3/12">
         <Image src={Icon} alt="agora logo" />
         <div>

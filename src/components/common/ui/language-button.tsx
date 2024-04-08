@@ -7,7 +7,7 @@ type Props = {
 };
 const mainStyles = "flex items-center justify-center rounded  px-[15px] h-[26px]  text-xs  ";
 const selectedLanguageStyles = "bg-black font-bold text-white leading-3	";
-const languageStyle = "bg-white text-black leading-3 	";
+const languageStyle = " text-black leading-3 	";
 
 const ButtonLanguage = ({ lang }: Props) => {
   const redirect = useRouter();

@@ -3,11 +3,11 @@ import { NavbarItemLink } from "@/types/common.type";
 export const navbarItems: NavbarItemLink[] = [
   {
     key: "about_us",
-    path: "/about-us",
+    path: "#",
   },
   {
     key: "programs",
-    path: "/programs",
+    path: "#",
     children: [
       {
         key: "entrepreneurs",
@@ -25,23 +25,23 @@ export const navbarItems: NavbarItemLink[] = [
   },
   {
     key: "impact",
-    path: "/impact",
+    path: "#",
   },
   {
     key: "join_us",
-    path: "/join-us",
+    path: "#",
   },
   {
     key: "blog",
-    path: "/blog",
+    path: "/blogs",
   },
   {
     key: "resources",
-    path: "/resources",
+    path: "#",
   },
   {
     key: "offices",
-    path: "/offices",
+    path: "#",
     children: [
       {
         key: "mexico",
@@ -52,6 +52,6 @@ export const navbarItems: NavbarItemLink[] = [
   {
     key: "change_lab",
     path: "https://change-lab.co/",
-    classes: "font-semibold text-secondary hover:text-primary ",
+    classes: "text-sm font-semibold text-secondary  ",
   },
 ];

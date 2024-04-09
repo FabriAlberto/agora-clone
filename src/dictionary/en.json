@@ -65,7 +65,7 @@
     "error_invalid_email": " Invalid email",
     "error_max_characters": "Max 20 characters",
     "message_error": "Error try again later",
-    "message_success": "Success"
+    "message_success": "Congratulations you have successfully subscribed"
   },
   "blogs": {
     "error_not_found": "Blogs not found, try again later",

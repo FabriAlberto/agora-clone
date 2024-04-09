@@ -27,7 +27,7 @@ const SuscribeForm = ({ dictionary }: Props) => {
   });
   
   const dictionaryHome = dictionary.home;
-  const { handleSubmit } = methods;
+  const { handleSubmit,reset } = methods;
 
   const onSubmit = async (data: SuscribeNewsletterFields) => {
     setIsLoading(true);
@@ -35,6 +35,7 @@ const SuscribeForm = ({ dictionary }: Props) => {
     if (!success) {
       toast.error(message);
       setIsLoading(false);
+      reset();
       return;
     }
     toast.success(`${message} \n ${responseData}`, configToast);

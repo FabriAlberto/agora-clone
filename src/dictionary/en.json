@@ -68,6 +68,8 @@
     "message_success": "Success"
   },
   "blogs": {
-    "error_not_found": "Blogs not found, try again later"
+    "error_not_found": "Blogs not found, try again later",
+    "title_header_card": "Read our latest articles and news",
+    "subtitle_header_card": "OUR BLOG"
   }
 }

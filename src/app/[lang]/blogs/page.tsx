@@ -17,14 +17,13 @@ export default async function BlogsPage({
   params: { lang },
   searchParams: { page },
 }: Readonly<Props>) {
-
   const articles = await fetchNytArticles();
   const dictionary = await getDictionary(lang);
 
   return (
     <div className="w-full pt-[40px]">
       <section className={`${classSectionContainer}`}>
-        <BlogsSectionHeader />
+        <BlogsSectionHeader dictionary={dictionary.blogs} />
       </section>
       <section className={`${classSectionContainer}`}>
         {articles.length > 0 ? (

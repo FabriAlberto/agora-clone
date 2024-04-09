@@ -69,6 +69,8 @@
     "message_success":"Correcto"
   },
   "blogs":{
-     "error_not_found":"Articulos no encontrados, intentalo de nuevo en 1 minuto"
+     "error_not_found":"Articulos no encontrados, intentalo de nuevo en 1 minuto",
+     "title_header_card":"Conoce nuestros últimos artículos y noticias",
+     "subtitle_header_card":"Nuestro blog"
   }
 }

@@ -5,7 +5,6 @@ import { createContext, useContext } from "react";
 
 export type FilteredDataType = {
   filteredArticles: NYTArticle[];
-  sectionFilteredArticles: NYTArticle[];
   originalState: NYTArticle[];
   sections: string[];
   currentSection: string;
@@ -13,7 +12,7 @@ export type FilteredDataType = {
   changeSection: (newSection: string) => void;
   pages: number;
   maxPerPage: number;
-    changePage: (newPage: number) => void;
+  changePage: (newPage: number) => void;
 };
 
 export const FilteredContext = createContext<FilteredDataType>({} as FilteredDataType);

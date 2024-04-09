@@ -9,7 +9,7 @@ type FilteredActionType =
       };
     }
   | {
-      type: "SET_SECTION";
+      type: "CHANGE_SECTION";
       payload: { newSection: string };
     }
   | {
@@ -36,7 +36,7 @@ export const FilteredReducer = (
       return newState;
     }
 
-    case "SET_SECTION": {
+    case "CHANGE_SECTION": {
       const { newSection } = action.payload;
       if (newSection === "all") {
         const articlesFiltered = [...state.originalState].slice(0, state.maxPerPage);

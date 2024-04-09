@@ -37,7 +37,6 @@ const SuscribeForm = ({ dictionary }: Props) => {
       setIsLoading(false);
       return;
     }
-
     toast.success(`${message} \n ${responseData}`, configToast);
     setIsLoading(false);
   };

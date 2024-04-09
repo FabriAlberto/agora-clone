@@ -1,12 +1,11 @@
 "use client";
 import { NYTArticle } from "@/types/article";
 import { FilteredContext } from "./filtered.context";
-import { useEffect, useReducer } from "react";
+import { useEffect, useMemo, useReducer } from "react";
 import { FilteredReducer } from "./filtered.reduce";
 
 export interface FilteredState {
   filteredArticles: NYTArticle[];
-  sectionFilteredArticles: NYTArticle[];
   sections: string[];
   originalState: NYTArticle[];
   pages: number;
@@ -21,7 +20,6 @@ type ContextProps = {
 export const FilteredContextProvider = ({ children, articles }: ContextProps) => {
   const [state, dispatch] = useReducer(FilteredReducer, {
     filteredArticles: [],
-    sectionFilteredArticles: articles,
     originalState: articles,
     sections: [],
     pages: 1,
@@ -33,16 +31,21 @@ export const FilteredContextProvider = ({ children, articles }: ContextProps) =>
   useEffect(() => {
     dispatch({ type: "INITIAL_CONFIG", payload: { articles: articles } });
   }, []);
+
   const changePage = (newPage: number) => {
     dispatch({ type: "CHANGE_PAGE", payload: { newPage } });
   };
   const changeSection = (newSection: string) => {
-    dispatch({ type: "SET_SECTION", payload: { newSection } });
+    dispatch({ type: "CHANGE_SECTION", payload: { newSection } });
   };
-  
-  return (
-    <FilteredContext.Provider value={{ ...state, changeSection, changePage }}>
-      {children}
-    </FilteredContext.Provider>
+
+  const contextValue = useMemo(
+    () => ({
+      ...state,
+      changeSection,
+      changePage,
+    }),
+    [state, changeSection, changePage]
   );
+  return <FilteredContext.Provider value={contextValue}>{children}</FilteredContext.Provider>;
 };

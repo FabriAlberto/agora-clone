@@ -11,7 +11,6 @@ type Props = {
 };
 
 const FooterLinks = ({ footerItems, lang, dictionary }: Props) => {
-  console.log(lang);
   return (
     <ul className="flex flex-col gap-3 ">
       {footerItems.map((item) => {

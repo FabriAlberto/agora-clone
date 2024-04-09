@@ -8,7 +8,6 @@ import { navbarItems } from "@/lib/routes";
 import ButtonDonate from "@/components/common/ui/button-donate";
 import ButtonLanguage from "@/components/common/ui/language-button";
 import Link from "next/link";
-import ButtonSuscribe from "./button-suscribe";
 import SocialNetworkingList from "./social-networking-list";
 import ButtonArrowAnimation from "@/components/common/ui/button-arrow-animation";
 export default async function CustomFooter() {

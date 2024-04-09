@@ -23,7 +23,7 @@ const CustomStaticInfoCard = ({
   className,
 }: Props) => {
   return (
-    <article className={` p-[10px] ${className ?? "w-full md:w-1/3"} group`}>
+    <article className={` p-[10px] ${className ?? "w-full md:w-2/4 lg:w-1/3"} group`}>
       <div className={`relative  mb-[20px] overflow-hidden rounded-xl `}>
         <div className="absolute left-7 top-[25px] rounded-3xl bg-black text-white transition-colors duration-300 group-hover:bg-[#E2663A]">
           <p className="px-3 py-1 text-[12px]">{tag?.toUpperCase()}</p>
@@ -32,9 +32,8 @@ const CustomStaticInfoCard = ({
         <Link href={buttonHref ?? ""} target={"_blank"}>
           <Image
             src={img}
-            alt="mujer_emprendedora"
+            alt={title}
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
-            className=""
             width={1000}
             height={1000}
           />

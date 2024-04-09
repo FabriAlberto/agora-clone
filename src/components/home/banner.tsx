@@ -14,7 +14,7 @@ const Banner = () => {
       <Link href={"https://agora2030.org/programa-juntas-contamos/"} className="block md:hidden">
         <Image
           src={HeaderImageMobile}
-          alt="logo"
+          alt="logo agora agora2030"
           className=" h-[70vh] w-full object-cover md:h-auto"
         />
       </Link>

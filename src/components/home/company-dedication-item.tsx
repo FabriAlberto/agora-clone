@@ -28,7 +28,7 @@ const CustomAnimationCard = ({ content, href="#", src, title }: Props) => {
         <Link href={href} target={"_blank"}>
           <Image
             src={src}
-            alt="mujer_emprendedora"
+            alt={title}
             style={{ width: "100%", height: "100%" }}
             className={`${hovered ? "img-dedication-animation" : "img-dedication"}`}
           />

@@ -70,3 +70,25 @@ body {
   z-index: 0;
 
 }
+.arrow-icon:hover{
+    transition: all 0.4s ease-in-out;
+    animation-name: moveArrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes moveArrow{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-3px);
+  }
+  75%{
+    transform: translateY(3px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

@@ -11,13 +11,15 @@ import { Locale } from "@/types/common.type";
 import ButtonDonate from "@/components/common/ui/button-donate";
 import Link from "next/link";
 import { MasterDictionaryType } from "@/context/main.context";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Button } from "@nextui-org/react";
 type Props = {
   lang: Locale;
   dictionary: MasterDictionaryType;
 };
 export default function CustomNavbar({ lang, dictionary }: Readonly<Props>) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   return (
     <Navbar
@@ -53,13 +55,17 @@ export default function CustomNavbar({ lang, dictionary }: Readonly<Props>) {
         </div>
       </NavbarContent>
 
-      <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="md:hidden" />
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="md:hidden"
+      />
       <MenuMobile
         navbarItems={navbarItems}
         dictionary={dictionary.layout}
         lang={lang as Locale}
         onCloseMenu={() => setIsMenuOpen(false)}
       />
+      
     </Navbar>
   );
 }

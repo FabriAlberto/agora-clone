@@ -1,3 +1,4 @@
+import ArrowUpButton from "@/components/layout/arrow-up-button";
 import CustomFooter from "@/components/layout/footer/custom-footer";
 import CustomNavbar from "@/components/layout/navbar/custom-navbar";
 import { getDictionary } from "@/utils/dictionary";
@@ -7,15 +8,18 @@ import React from "react";
 const Layout = async ({ children }: { children: React.ReactNode }) => {
   const lang = getLocaleFromHeader();
   const dictionary = await getDictionary(lang);
+
   return (
-    <div>
+    <div className="relative">
       <header className="mb-[75px]">
         <CustomNavbar dictionary={dictionary} lang={lang} />
       </header>
       <main>{children}</main>
+      <ArrowUpButton/>
       <footer className="min-h-[270px] w-full  px-[50px] py-3 ">
         <CustomFooter />
       </footer>
+      
     </div>
   );
 };

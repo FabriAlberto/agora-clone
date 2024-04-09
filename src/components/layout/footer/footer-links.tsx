@@ -16,7 +16,7 @@ const FooterLinks = ({ footerItems, lang, dictionary }: Props) => {
       {footerItems.map((item) => {
         return (
           <Link key={item.key} href={getFullPath(lang, item.path)}>
-            <p className={` ${item.classes} text-base`}>{dictionary[item.key]} </p>
+            <p className={` ${item.classes} text-base  `}>{dictionary[item.key]} </p>
           </Link>
         );
       })}

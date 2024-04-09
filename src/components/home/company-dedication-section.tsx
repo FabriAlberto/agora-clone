@@ -9,7 +9,7 @@ type Props = {
 
 const CompanyDedication = ({ dictionary }: Props) => {
   return (
-    <div className="mt-7 flex w-full justify-between flex-wrap">
+    <div className="mt-7 flex w-full flex-wrap justify-between">
       {itemsCompanyDedication.map((item) => {
         return (
           <CustomAnimationCard
@@ -19,9 +19,8 @@ const CompanyDedication = ({ dictionary }: Props) => {
             src={item.image}
             href={item.href}
             backgroundColorContent={item.backgroundColorContent}
-            className="w-full md:w-4/12"
+            className="w-full md:w-2/4 lg:w-4/12"
           />
-          
         );
       })}
     </div>

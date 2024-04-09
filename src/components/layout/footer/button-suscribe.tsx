@@ -21,7 +21,7 @@ const ButtonSuscribe = ({ dictionary }: Props) => {
       <p className=" text-sm font-extrabold text-secondary">{dictionary.btn_suscribe}</p>
       <Image
         src={ArrowUp}
-        alt="arrow up"
+        alt="arrow up icon"
         width={19}
         height={19}
         className={hovered ? "move-suscribe-button" : "suscribe-button"}

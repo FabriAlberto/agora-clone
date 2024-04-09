@@ -16,14 +16,14 @@ const MenuSectionsBlogs = ({ sections }: Props) => {
       {sections.map((section) => (
         <button
           key={section}
-          className={`text-sm ${currentSection === section ? "font-bold text-primary" : "text-white"}`}
+          className={`text-sm ${currentSection === section ? "font-bold text-black bg-white p-1 rounded-md" : "text-white"} `}
           onClick={() => handleChangeSection(section)}
         >
           {section.toLocaleUpperCase()}
         </button>
       ))}
       <button
-        className={`text-sm ${currentSection === "all" ? "font-bold text-primary" : "text-white"}`}
+        className={`text-sm ${currentSection === "all" ? "font-bold text-black bg-white p-1 rounded-md " : "text-white"} `}
         onClick={() => handleChangeSection("all")}
       >
         ALL

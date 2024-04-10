@@ -83,12 +83,14 @@
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.8s ease-out;
+    transition-delay: 0s;
   }
  
 }
 .container-static-card:hover .title-animate::after{
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: bottom left; 
+  transition-delay: .3s;
 }
 @keyframes animateCard{
   from{

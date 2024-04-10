@@ -10,12 +10,12 @@ const ImpactSection = ({ dictionary }: Props) => {
   return (
     <section className="w-full bg-secondary px-[50px]  py-[70px] text-white ">
       <div className={`mx-auto flex max-w-[1140pxpx] flex-wrap justify-between`}>
-        <div className="w-12/12 pb-[40px] pt-[50px] md:w-3/12">
+        <div className="w-12/12 pb-[40px] pt-[50px] lg:w-3/12">
           <p className="mb-4 text-3xl font-medium">{dictionary.title_impact}</p>
           <p>{dictionary.text_impact}</p>
         </div>
 
-        <div className="w-12/12 md:w-7/12">
+        <div className="w-full lg:w-7/12">
           <div className="flex w-full justify-end">
             <ButtonArrowAnimation
               title={dictionary.see_more}

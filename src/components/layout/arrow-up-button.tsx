@@ -45,7 +45,7 @@ const ArrowUpButton = () => {
       className={`
       fixed bottom-10 right-10 flex hidden h-[50px] w-[50px] 
       cursor-pointer items-center justify-center rounded-full 
-      bg-primary shadow	 `}
+      bg-primary shadow	z-15 `}
       onClick={scrollToTop}
     >
       <div className="progress-value flex h-[calc(100%-15px)] w-[calc(100%-15px)] items-center justify-center rounded-full bg-white">

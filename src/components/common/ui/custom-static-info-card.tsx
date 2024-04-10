@@ -23,9 +23,9 @@ const CustomStaticInfoCard = ({
   className,
 }: Props) => {
   return (
-    <article className={` p-[10px] ${className ?? "w-full md:w-2/4 lg:w-1/3"} group`}>
+    <article className={` p-[10px] ${className ?? "w-full md:w-2/4 lg:w-1/3"} container-static-card`}>
       <div className={`relative  mb-[20px] overflow-hidden rounded-xl `}>
-        <div className="absolute left-7 top-[25px] rounded-3xl bg-black text-white transition-colors duration-300 group-hover:bg-[#E2663A]">
+        <div className="absolute left-7 top-[25px] rounded-3xl bg-black text-white ">
           <p className="px-3 py-1 text-[12px]">{tag?.toUpperCase()}</p>
         </div>
 
@@ -41,7 +41,7 @@ const CustomStaticInfoCard = ({
       </div>
 
       <div className={`p-y-[30px] min-h-[170px] rounded-xl `}>
-        <h3 className="mb-[1rem] text-lg  font-bold">{title}</h3>
+        <h3 className="mb-[1rem] text-lg  font-bold title-animate">{title}</h3>
         <p className="mb-[1rem] text-base">{content}</p>
       </div>
       <div className="mt-[20px] w-full ">

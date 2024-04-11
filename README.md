@@ -1,8 +1,8 @@
 # Clon de Agora2030 💻
 Este es un clon de la pagina  [Agora](https://agora2030.org/) .
 Las secciones realizadas son :
- - Página principal (home)
- - Página de Blogs 
+ - Página principal [home](https://agora-clone.vercel.app)
+ - Página de [Blogs](https://agora-clone.vercel.app/es/blogs) 
 
 
  ### Despliegue
